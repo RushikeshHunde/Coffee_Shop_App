@@ -1,0 +1,133 @@
+/* Modern CSS for the receipt page */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.receipt-container {
+    background-color: #fff; /* White background */
+    padding: 3rem 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    max-width: 650px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e9ecef; /* Subtle border */
+}
+
+h1 {
+    color: #495057; /* Slightly muted heading color */
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #6c757d;
+    margin-top: 0;
+}
+
+.receipt-details {
+    width: 100%;
+    text-align: left;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #e9ecef; /* Separator line */
+}
+
+.receipt-details p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.receipt-details p strong {
+    color: #495057;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; /* Lighter table lines */
+}
+
+th {
+    background-color: #f1f3f5; /* Light header background */
+    color: #495057;
+    font-weight: 600;
+}
+
+tr:last-child td {
+    border-bottom: none; /* No border for the last row */
+}
+
+.total-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: right;
+    width: 100%;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 2px dashed #adb5bd; /* Dashed line for total */
+    color: #333;
+}
+
+.button-group {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-group a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.button-group .primary-btn {
+    background-color: #007bff; /* A modern blue */
+    color: white;
+    border: 2px solid #007bff;
+}
+
+.button-group .primary-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.button-group .secondary-btn {
+    background-color: #fff;
+    color: #6c757d;
+    border: 2px solid #ced4da;
+}
+
+.button-group .secondary-btn:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
