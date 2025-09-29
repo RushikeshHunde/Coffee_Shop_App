@@ -24,7 +24,7 @@ public class OrderServlet extends HttpServlet {
     // Database connection details
     private static final String DB_URL = "jdbc:mysql://localhost:3306/CoffeeShopDB";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "#rushi@2183#";
+    private static final String DB_PASSWORD = "";
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -82,3 +82,4 @@ public class OrderServlet extends HttpServlet {
         }
     }
 }
+
