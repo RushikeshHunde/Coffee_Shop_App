@@ -17,7 +17,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class CurrentReceiptServlet extends HttpServlet {
     private static final String DB_URL = "jdbc:mysql://localhost:3306/CoffeeShopDB";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "#rushi@2183#";
+    private static final String DB_PASSWORD = "";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -95,4 +95,5 @@ public class CurrentReceiptServlet extends HttpServlet {
         RequestDispatcher rd = request.getRequestDispatcher("current_receipt.jsp");
         rd.forward(request, response);
     }
+
 }
